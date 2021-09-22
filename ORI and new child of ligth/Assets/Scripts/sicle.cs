@@ -21,6 +21,22 @@ public class sicle : MonoBehaviour
     {
         Debug.Log("I in SCHOOOOOlll NoOoO");
     }
+    public void Akido()
+    {
+        Debug.Log("I on Akido, I am AkIdOkA");
+    }
+    public void WashThePlate()
+    {
+        Debug.Log("I wash the plate after eating");
+    }
+    public void Marcet()
+    {
+        Debug.Log("I going to the marcet");
+    }
+    public void Isover()
+    {
+        Debug.Log("Week is over")
+    }
     public string GetDay(int i)
     {
         var result = "ChO";
@@ -64,8 +80,14 @@ public class sicle : MonoBehaviour
         {
             Debug.Log($"Today is {GetDay(i)}");
             Eat();
-            Play();
-            Eat();
+            if (i <= 5 && i >= 1)
+            {
+                WashThePlate()
+            }
+            else
+            {
+                Play()
+            }
             if (i <= 5 && i >= 1)
             {
                 Study();
@@ -75,7 +97,25 @@ public class sicle : MonoBehaviour
                 Play();
             }
             Eat();
+            if (i == 2 || i == 4 || i == 6)
+            {
+                Akido()
+            }
+            else
+            {
+                Play();
+            }
+            for (int i =1;i <=7;1 + 2)
+            {
+                Marcet()
+            }
+            Eat();
+            for (int i =1)
             Sleep();
+            if (1 == 7)
+            {
+                Isover();
+            }
         }
         
     }
